@@ -1,0 +1,217 @@
+
+.footer {
+    height: 252px;
+    background: var(--header-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+  }
+  .footer-list {
+    display: flex;
+
+    &__logo {
+    margin-bottom: 20px;
+  }
+  
+  &__web {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+  }
+  
+  &__studio {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  }
+
+  .address {
+    &__list {
+      width: 230px;
+      height: 80px;
+      margin-top: 20px;
+    }
+    &__link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+    }
+    
+    &__mail {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &__call {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+   
+    &__mail {
+      margin-top: 9px;
+    }
+    
+    &__tel {
+      margin-top: 9px;
+    }
+  }
+  
+  
+  
+  .join {
+    width: 230px;
+    height: 80px;
+    margin-left: 60px;
+    margin-top: 12px;
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--btn-font-color);
+      margin-bottom: 20px;
+    }
+  
+    &__list {
+      display: flex;
+    }
+    
+    &__item {
+      width: 44px;
+      height: 44px;
+      margin-right: 10px;
+    }
+    
+    &__link {
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__icon {
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      fill: var(--btn-font-color);
+    }
+    
+    &__link:hover,
+    &__link:focus {
+      background-color: var(--accent-color);
+    }
+    
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+      fill: #ffffff;
+    }
+  }
+  
+  .subscribe {
+    width: 570px;
+    height: 86px;
+    display: flex;
+    margin-left: 80px;
+    &__container {
+      margin-top: 12px;
+    }
+    &__title{
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+    
+    &__input {
+      width: 358px;
+      height: 50px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: transparent;
+      outline: transparent;
+      padding-left: 16px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    
+    &__input::placeholder {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    &__button-container {
+      display: flex;
+      margin-top: 48px;
+      margin-left: 10px;
+    }
+    
+    
+    
+    &__button {
+      width: 200px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.87;
+      background: #2196f3;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      letter-spacing: 0.06em;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__button:hover,
+    &__button:focus {
+      background-color: #188ce8;
+    }
+    
+    &__icon {
+      fill: #ffffff;
+      margin-left: 10px;
+    }
+  }
+  
+  
+  
+  

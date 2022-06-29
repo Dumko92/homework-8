@@ -1,0 +1,129 @@
+
+.header {
+    background-color: var(--btn-font-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ececec;
+    & .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  
+  
+  .contacts {
+    margin-left: auto;
+    &__list {
+      display: flex;
+    }
+    
+    &__link-tel,
+    &__link-mail {
+      width: 100%;
+      height: 100%;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__item-connect {
+      margin-left: 50px;
+    }
+    
+    &__icon {
+      margin-right: 10px;
+    }
+    
+  &__link-mail:hover,
+  &__link-mail:focus,
+  &__link-tel:hover,
+  &__link-tel:focus {
+    color: var(--accent-color);
+  }
+  
+  &__link-tel,
+  &__link-mail {
+    fill: currentColor;
+  }
+  
+  &__link-tel:hover,
+  &__link-tel:focus,
+  &__link-mail:hover,
+  &__link-mail:focus {
+    color: var(--accent-color);
+  }
+  }
+  
+  .logo {
+    margin-right: 93px;
+    &__web {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: var(--accent-color);
+    }
+    
+    &__studio {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.19;
+      letter-spacing: 0.03em;
+      color: var(--logo-color);
+    }
+  }
+
+
+  .nav {
+  &__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__list {
+    display: flex;
+  }
+  
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  }
+  
+  .current::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    transform: translateY(32px);
+    background-color: #2196f3;
+  }
