@@ -27,7 +27,7 @@
     transition: transform 300ms;
     padding: 40px;
     background: #ffffff;
-    &-close-btn {
+    &__close-btn {
       width: 30px;
       height: 30px;
       border: 1px solid rgba(0, 0, 0, 0.1);
@@ -46,13 +46,13 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     
-    &-close-btn:hover,
-    &-close-btn:focus {
+    &__close-btn:hover,
+    &__close-btn:focus {
       fill: #2196f3;
       border: 1px solid rgba(0, 0, 0, 0.1);
     }
     
-    &-title {
+    &__title {
       font-weight: 700;
       font-size: 20px;
       line-height: 1.15;
@@ -62,7 +62,7 @@
       margin-bottom: 12px;
     }
     
-    &-label {
+    &__label {
       font-weight: 400;
       font-size: 12px;
       line-height: 1.16;
@@ -72,7 +72,7 @@
       display: block;
     }
     
-    &-input {
+    &__input {
       width: 100%;
       height: 40px;
       border: 1px solid rgba(33, 33, 33, 0.2);
@@ -87,43 +87,88 @@
       color: var(--accent-color);
     }
     
-    &-input:not(:placeholder-shown) {
+    &__input:not(:placeholder-shown) {
       border-color: rgba(33, 33, 33, 0.2);
     }
     
-    &-input:focus {
+    &__input:focus {
       border-color: var(--accent-color);
     }
     
-    &-input:focus + .modal-soc-icon {
+    &__input:focus + &__icon {
       fill: var(--accent-color);
     }
     
-    &-field {
+    &__field {
       position: relative;
       display: flex;
       flex-direction: column;
       margin-bottom: 10px;
     }
-    &-check:checked + .check-text span {
+    &__check:checked + &__check-text span {
       background-color: #2196f3;
       outline: transparent;
     }
     
-    &-check:checked + .check-text + .check-icon {
+    &__check:checked + &__check-text + &__check-icon {
       fill: #ffffff;
     }
-    &-soc-icon {
+    &__icon {
     position: absolute;
     left: 10px;
     top: 50%;
-    transform: translateY(-70%);
+    transform: translateY(-30%);
     }
     &-btn-send {
       justify-content: center;
       align-items: center;
       display: flex;
       margin-top: 30px;
+    }
+    &__check-icon {
+      fill: transparent;
+    }
+    &__check-text span {
+      width: 16px;
+      height: 15px;
+      border: 2px solid #212121;
+      border-radius: 3px;
+      margin-right: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    &__check-icon {
+      width: 100%;
+      height: 100%;
+    }
+    
+    &__check-link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      text-decoration-line: underline;
+      color: #2196f3;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-left: 5px;
+    }
+    &__check-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      align-items: baseline;
+      justify-content: center;
+      color: #757575;
+      display: flex;
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     
   }
@@ -160,58 +205,6 @@
       }
     }
   
-    
-
-  
-
-  .check {
-  &-icon {
-    fill: transparent;
-  }
-  &-text span {
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 3px;
-    margin-right: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  &-icon {
-    width: 100%;
-    height: 100%;
-  }
-  
-  &-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    text-decoration-line: underline;
-    color: #2196f3;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-left: 5px;
-  }
-  &-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    align-items: baseline;
-    justify-content: center;
-    color: #757575;
-    display: flex;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  }
-
   .input-wrap {
     position: relative;
   }

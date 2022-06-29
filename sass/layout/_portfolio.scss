@@ -3,12 +3,12 @@
     background: var(--btn-font-color);
     padding-top: 94px;
     padding-bottom: 94px;
-    &-btn-list {
+    &__btn-list {
       display: flex;
       margin-bottom: 50px;
       margin-left: 300px;
     }
-    &-btn {
+    &__btn {
       font-family: inherit;
       font-weight: 500;
       font-size: 16px;
@@ -21,52 +21,52 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       border: none;
     }
-    &-btn-item:nth-child(-n + 4) {
+    &__btn-item:nth-child(-n + 4) {
       padding-right: 8px;
     }
     
-    &-btn:hover,
-    &-btn:focus {
+    &__btn:hover,
+    &__btn:focus {
       color: var(--btn-font-color);
       background: var(--accent-color);
       border: none;
     }
     
-    &-btn:hover,
-    &-btn:focus {
+    &__btn:hover,
+    &__btn:focus {
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
     
-    &-content {
+    &__content {
       display: flex;
       flex-wrap: wrap;
     }
     
-    &-list {
+    &__list {
       display: flex;
       flex-wrap: wrap;
       margin-left: -30px;
       margin-bottom: -30px;
     }
     
-    &-item {
+    &__item {
       flex-basis: calc(100% / 3 - 30px);
       margin-left: 30px;
       margin-bottom: 30px;
     }
     
-    &-item {
+    &__item {
       width: 370px;
       height: 404px;
       background-color: var(--btn-font-color);
     }
     
-    &-top-wrap {
+    &__top-wrap {
       position: relative;
       overflow: hidden;
     }
     
-    &-top-text {
+    &__top-text {
       height: 294px;
       position: absolute;
       top: 0;
@@ -83,16 +83,16 @@
       padding: 62px 24px;
     }
     
-    &-item:hover .portfolio-top-text {
+    &__item:hover &__top-text {
       transform: translateY(0);
     }
     
-    &-container {
+    &__container {
       padding: 20px 24px;
       outline: 1px solid #eeeeee;
     }
     
-    &-title {
+    &__title {
       font-weight: 700;
       font-size: 18px;
       line-height: 2;
@@ -101,7 +101,7 @@
       margin-bottom: 4px;
     }
     
-    &-text {
+    &__text {
       font-weight: 400;
       font-size: 16px;
       line-height: 1.87;
@@ -109,7 +109,7 @@
       color: var(--text-color);
     }
     
-    &-top-text {
+    &__top-text {
       position: absolute;
     }
   }
