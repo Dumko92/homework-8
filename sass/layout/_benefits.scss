@@ -1,10 +1,12 @@
 
 .benefits {
     background: var(--btn-font-color);
-    // padding-top: 94px;
-    // padding-bottom: 94px;
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+     }
 
     &__company {
       display: none;
@@ -18,7 +20,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    
+
     &__item {
       width: 100%;
       @media screen and (min-width:768px) {

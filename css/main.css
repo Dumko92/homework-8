@@ -234,26 +234,44 @@ body {
 
 .clients {
   background: var(--btn-font-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__title {
   margin-bottom: 50px;
 }
 .clients__list {
+  margin: 0;
   justify-content: center;
   align-items: center;
-  margin-right: -30px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: auto;
 }
 .clients__item {
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
   background-color: var(--btn-font-color);
   border: solid 1px #afb1b8;
   border-radius: 3%;
-  margin-right: var(--typical-margin);
   color: #afb1b8;
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .clients__link {
   width: 100%;
@@ -529,6 +547,12 @@ body {
   background: var(--btn-font-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .benefits__company {
   display: none;
@@ -939,23 +963,41 @@ body {
 
 .team {
   background: var(--team-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__logo {
   margin-bottom: 50px;
 }
 .team__list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .team__item {
-  width: 270px;
-  height: 428px;
   background: var(--btn-font-color);
   margin-right: var(--typical-margin);
   mix-blend-mode: normal;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .team__container {
   padding-top: var(--typical-margin);
@@ -978,9 +1020,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 16px;
-}
-.team-item:last-child {
-  margin-right: 0;
 }
 
 .soc-list {

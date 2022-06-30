@@ -1,28 +1,42 @@
 
 .clients {
     background: var(--btn-font-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width:1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+     }
+
     &__title {
       margin-bottom: 50px;
     }
     
     &__list {
+      margin: 0;
       justify-content: center;
       align-items: center;
-      margin-right: -30px;
       display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: auto;
     }
     
     &__item {
-      width: 170px;
+      width: calc((100% - 30px) / 2);
       height: 92px;
       background-color: var(--btn-font-color);
       border: solid 1px #afb1b8;
       border-radius: 3%;
-      margin-right: var(--typical-margin);
       color: #afb1b8;
+      @media screen and (min-width:768px) {
+        width: calc((100% - 60px) / 3);
+      }
+      @media screen and (min-width:1200px) {
+        width: calc((100% - 150px) / 6);
+      }
     }
+    
     
     &__link {
       width: 100%;
