@@ -1,8 +1,11 @@
 
 .benefits {
     background: var(--btn-font-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     &__company {
       display: none;
       visibility: hidden;
@@ -13,10 +16,17 @@
   
   .card-list {
     display: flex;
-    margin-left: -30px;
+    flex-wrap: wrap;
+    gap: 30px;
+    
     &__item {
-      width: 270px;
-      margin-left: var(--typical-margin);
+      width: 100%;
+      @media screen and (min-width:768px) {
+        width: calc((100% - 30px) / 2);
+      }
+      @media screen and (min-width:1200px) {
+        width: calc((100% - 90px) / 4);
+       }
     }
     &__title {
       font-weight: 700;
@@ -27,15 +37,18 @@
       color: var(--title-color);
       margin-bottom: 10px;
     }
+
     &__text {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: 0.03em;
       color: var(--text-color);
+      
     }
+    
     &__image {
-      width: 270px;
+      width: 100%;
       height: 120px;
       justify-content: center;
       align-items: center;
@@ -44,11 +57,13 @@
       margin-bottom: var(--typical-margin);
       display: flex;
     }
+
     &__icon {
       justify-content: center;
       align-items: center;
     }
   }
+  
   
   
   
