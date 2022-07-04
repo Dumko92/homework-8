@@ -9,13 +9,14 @@
     & .is-hidden .modal {
       transform: scale(0);
     }
+    padding: 15px;
   }
   
   
   
   .modal {
-    width: 528px;
-    min-height: 581px;
+    max-width: 450px;
+    height: 609px;
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -147,20 +148,19 @@
     
     &__check-link {
       font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
+      font-size: 12px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       text-decoration-line: underline;
       color: #2196f3;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      margin-left: 5px;
     }
     &__check-text {
       font-weight: 400;
-      font-size: 14px;
-      line-height: 1.71;
+      font-size: 12px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       align-items: baseline;
       justify-content: center;

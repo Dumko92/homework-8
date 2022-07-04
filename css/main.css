@@ -564,7 +564,6 @@ body {
 
 .studio {
   max-width: 1600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/studio-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -573,6 +572,32 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  background-image: url(/img/480\ x1.jpg);
+}
+@media screen and (min-width: 480px) {
+  .studio {
+    background-image: url(/img/480\ x2.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .studio {
+    background-image: url(/img/768\ x1.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .studio {
+    background-image: url(/img/768\ x2.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .studio {
+    background-image: url(/img/1200\ x1.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .studio {
+    background-image: url(/img/1200\ x2.jpg);
+  }
 }
 .studio-content__title {
   width: 696px;
@@ -691,14 +716,15 @@ body {
   position: fixed;
   top: 0;
   transition: opacity 300ms, visibility 300ms;
+  padding: 15px;
 }
 .backdrop .is-hidden .modal {
   transform: scale(0);
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  height: 609px;
   border-radius: 5px;
   position: absolute;
   top: 50%;
@@ -818,20 +844,19 @@ body {
 }
 .modal__check-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 5px;
 }
 .modal__check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   align-items: baseline;
   justify-content: center;

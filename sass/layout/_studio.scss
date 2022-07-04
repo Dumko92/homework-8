@@ -1,11 +1,6 @@
 
 .studio {
-    max-width: 1600px;
-    background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/studio-bg.jpg);
+  max-width: 1600px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,6 +9,39 @@
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    @include mobile (min-resolution 1dppx) {
+      .studio {
+        background-image: url(/img/480\ x2.jpg);
+      }
+      @include mobile (min-resolution 2dppx) {
+        .studio {
+        background-image: url(/img/480\ x2.jpg);
+        } 
+      } 
+    } 
+      @include tablet (min-resolution 1dppx) {
+        .studio {
+          background-image: url(/img/768\ x1.jpg);
+        } 
+        @include tablet (min-resolution 2dppx) {
+          .studio {
+          background-image: url(/img/768\ x2.jpg);
+          } 
+      }
+      }
+        
+      @include desktop (min-resolution 1dppx) {
+        .studio {
+          background-image: url(/img/1200\ x1.jpg);
+        } 
+        @include desktop (min-resolution 2dppx) {
+          .studio {
+            background-image: url(/img/1200\ x2.jpg);
+          } 
+        }
+      }
+      
+    
     &-content__title {
       width: 696px;
       font-weight: 900;
@@ -54,8 +82,8 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-  }
-  
+}
+
   
   
   .btn-service :hover,
