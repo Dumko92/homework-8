@@ -305,22 +305,40 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
+}
 
 .footer-list {
-  flex-wrap: wrap;
-  flex-direction: column;
-  display: flex;
   align-items: center;
-  justify-content: center;
 }
-.footer-list__container {
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: auto;
+@media screen and (min-width: 768px) {
+  .footer-list {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 74px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer-list {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-list__container {
+    display: flex;
+  }
 }
 .footer-list__item {
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-list__item {
+    text-align: left;
+  }
 }
 .footer-list__logo {
   margin-bottom: 20px;
@@ -345,9 +363,20 @@ body {
 }
 
 .address__list {
-  text-align: center;
-  max-width: 230px;
+  max-width: 232px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 9px;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .address__list {
+    text-align: left;
+    justify-content: flex-start;
+  }
 }
 .address__link {
   font-style: normal;
@@ -373,18 +402,26 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.address__mail {
-  margin-top: 9px;
-}
-.address__tel {
-  margin-top: 9px;
-}
 
 .join {
+  margin: auto;
   max-width: 206px;
   height: 80px;
   text-align: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .join {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    text-align: left;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 0;
+  }
 }
 .join__title {
   font-weight: 700;
@@ -430,8 +467,20 @@ body {
 }
 
 .subscribe {
+  margin: auto;
   max-width: 450px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-top: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__list {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 .subscribe__title {
   width: 100%;
@@ -444,6 +493,11 @@ body {
   margin-bottom: 20px;
   margin-top: 12px;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    text-align: left;
+  }
+}
 .subscribe__input {
   width: 100%;
   height: 50px;
@@ -454,6 +508,11 @@ body {
   outline: transparent;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
 }
 .subscribe__input::placeholder {
   font-weight: 400;
@@ -469,6 +528,12 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__button-container {
+    margin-top: 0;
+    margin-left: 10px;
+  }
 }
 .subscribe__button {
   width: 200px;

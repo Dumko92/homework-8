@@ -256,8 +256,10 @@
     </main>
     <footer id="contavts" class="footer">
     <div class="container">
+        <div class="footer-container">
+        <div class="footer-list__container">
         <ul class="footer-list list">
-            <li class="footer-list__item">            
+            <li class="footer-list__item">          
                 <a class="footer-list__logo link" href="/"><span class="footer-list__web link">Web</span> <span
             class="footer-list__studio">Studio</span></a>
                 <address class="address">
@@ -269,11 +271,12 @@
                     </li>
                     <li class="address__tel"><a href="tel:+380991111111" class="address__call link">+38 099 111 11
                             11</a>
-                    </li>
+                    </li> 
                 </ul>
                 </address>
             </li>
-            <li class="join">
+            <div class="join">
+            <li class="join__content list">
                 <h3 class="join__title">присоединяйтесь</h3>
                 <ul class="join__list list">
                 <li class="join__item"><a href="" class="join__link link">
@@ -292,10 +295,13 @@
                     <svg class="join__icon" width="20" height="20">
                             <use href="./img/icon.svg#icon-linkedin"></use></svg></a>
                 </li>
-            </li>  
-            </ul>
-            <li>
-                <div class="subscribe">
+                </ul>
+            </li>
+            </div>
+            </div>
+            <div class="subscribe">
+            <li class="subscribe__list list">
+                <div class="subscribe-container__input">
                         <p class="subscribe__title">Подпишитесь на рассылку</p>
                 <form name="subscribe-form">
                         <label for="subscribe-label"></label>
@@ -310,7 +316,9 @@
                 </div>
                 </form>
             </li>
+            </div>
         </ul>
+        </div>
     </div>
     </footer>
 <!-- <div class="backdrop is-hidden" data-modal>

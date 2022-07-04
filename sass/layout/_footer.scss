@@ -4,27 +4,41 @@
     padding-top: 60px;
     padding-bottom: 60px;
     
-  }
-  .footer-list {
-    flex-wrap: wrap;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     
+    &-container {
+      @include desktop {
+        display: flex;
+        }
+    }
+    
+  }
 
+
+
+  .footer-list {
+    align-items: center;
+    @include tablet {
+      display: flex;
+      padding-left: 60px;
+      padding-right: 74px;
+      @include desktop {
+        padding: 0;
+        }
+    }
     
     
     &__container {
-      flex-wrap: wrap;
-    flex-direction: column;
-    margin: auto;
-    
+      @include desktop {
+        display: flex;
+        }
     }
     
     &__item {
     text-align: center;
     margin-bottom: 60px;
+    @include desktop {
+      text-align: left;
+      }
     }
 
     &__logo {
@@ -53,11 +67,25 @@
   }
 
   .address {
+    
+ 
     &__list {
-      text-align: center;
-      max-width: 230px;
+      max-width: 232px;
+      height: 80px;
+      margin: auto; 
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 9px ;
       margin-top: 20px;
+      @include desktop {
+        text-align: left;
+        justify-content: flex-start;
+      }
+      
     }
+
+
     &__link {
       font-style: normal;
       font-weight: 400;
@@ -84,23 +112,27 @@
       letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.6);
     }
-   
-    &__mail {
-      margin-top: 9px;
-    }
-    
-    &__tel {
-      margin-top: 9px;
-    }
   }
   
   
   
   .join {
+    margin: auto;
     max-width: 206px;
     height: 80px;
     text-align: center;
     margin-bottom: 60px;
+    @include tablet {
+    margin-right: 0;
+    }
+    @include desktop {
+    text-align: left;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 0;
+      }
+    
+    
     
     &__title {
       font-weight: 700;
@@ -155,8 +187,19 @@
   }
   
   .subscribe {
+    margin: auto;
     max-width: 450px;
     text-align: center;
+    @include desktop {
+      margin-top: 15px;
+      }
+    
+    &__list {
+      @include desktop {
+        display: flex;
+        align-items: flex-end;
+        }
+    }
     
     &__title{
       width: 100%;
@@ -168,6 +211,9 @@
       color: #ffffff;
       margin-bottom: 20px;
       margin-top: 12px;
+      @include desktop {
+        text-align: left;
+      }
     }
     
     &__input {
@@ -180,6 +226,9 @@
       outline: transparent;
       padding-left: 16px;
       color: rgba(255, 255, 255, 0.6);
+      @include desktop {
+        width: 358px;
+      }
     }
     
     &__input::placeholder {
@@ -196,7 +245,10 @@
       align-items: center;
       justify-content: center;
       margin-top: 20px;
-      
+      @include desktop {
+        margin-top: 0;
+        margin-left: 10px;
+      }
     }
     
     
