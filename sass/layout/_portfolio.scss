@@ -26,6 +26,7 @@
       line-height: 1.62;
       text-align: center;
       letter-spacing: 0.03em;
+      border-radius: 4px;
       color: var(--title-color);
       transition-property: all;
       transition-duration: 250ms;
@@ -51,14 +52,13 @@
       flex-wrap: wrap;
       gap: 30px;
     }
-    
-    &__list {
-      
-    }
-    
+ 
     
     &__item {
       width: 100%;
+      &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
       @include tablet {
         width: calc((100% - 30px) / 2);
       }
