@@ -1,8 +1,16 @@
 
 .about {
-    background: var(--btn-font-color);
+    display: none;
+    @include tablet {
+      display: none;
+      @include desktop {
+        display: block;
+        background: var(--btn-font-color);
     padding-bottom: 94px;
+      }
+    }
   }
+  
   
   .work-list {
     display: flex;

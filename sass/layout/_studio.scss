@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -36,6 +36,10 @@
           ), url(/img/768\ x2.jpg);
           } 
       }
+      @include desktop {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        }
       }
         
       @media screen and (min-width: 1200px) {
@@ -66,6 +70,11 @@
       text-transform: uppercase;
       color: var(--btn-font-color);
       margin-bottom: 30px;
+      @include desktop {
+        max-width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+        }
     }
     
     &-content {

@@ -19,7 +19,7 @@
 
 <body>
 
-    <!-- <header class="header">
+<header class="header">
         <div class="container">
             <a class="logo link" href="/"><span class="logo__web">Web</span> <span
                     class="logo__studio">Studio</span></a>
@@ -45,15 +45,15 @@
                 </ul>
             </div>
         </div>
-    </header> -->
-    <main>
-        <section id="studio" class="studio">
+</header>
+<main>
+    <section id="studio" class="studio">
             <div class="studio-content">
                 <h1 class="studio-content__title">Эффективные решения для вашего бизнеса</h1>
             </div>    
                 <button type="button" class="studio-content__btn" data-modal-open>Заказать услугу</button>
-        </section>
-        <section class="benefits">
+    </section>
+    <section class="benefits">
             <div class="container">
                 <h2 class="benefits__company">Преимущества компании</h2>
                 <ul class="card-list list">
@@ -101,31 +101,48 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- <section class="about">
+    </section>
+    <section class="about">
             <div class="container">
                 <h2 class="title__section">Чем мы занимаемся</h2>
                 <ul class="work-list list">
                     <li class="work-list__item">
-                        <img src="./img/image-work-1.jpg" alt="графики" width="370" height="294">
+                        <img srcset="./img/image-work-1.jpg 370w, 
+                        ./img/image-work-1x2.jpg 740w"
+                        src="./img/image-work-1.jpg" 
+                        alt="графики" 
+                        sizes="(min-width: 1200px) 33vw">
                         <p class="work-list__text">Десктопные приложения</p>
                     </li>
-                    <li class="work-list__item"> <img src="./img/image-work-2.jpg" alt="приложение" width="370" height="294">
+                    <li class="work-list__item"> 
+                        <img srcset="./img/image-work-2.jpg 370w, 
+                        ./img/image-work-2x2.jpg 740w"
+                        src="./img/image-work-2.jpg" 
+                        alt="приложение" 
+                        sizes="(min-width: 1200px) 33vw">
                         <p class="work-list__text">Мобильные приложения</p>
                     </li>
-                    <li class="work-list__item"> <img src="./img/image-work-3.jpg" alt="мобильность" width="370"
-                            height="294">
+                    <li class="work-list__item"> 
+                        <img srcset="./img/image-work-3.jpg 370w, 
+                        ./img/image-work-3x2.jpg 740w"
+                        src="./img/image-work-3.jpg" 
+                        alt="мобильность" 
+                        sizes="(min-width: 1200px) 33vw">
                         <p class="work-list__text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <section class="team">
+    </section>
+    <section class="team">
             <div class="container">
                 <h2 class="team__logo title__section">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-                        <img src="./img/people-1.jpg" alt="менеджер1" width="270" height="260">
+                        <img srcset="./img/people-1.jpg 450w, 
+                        ./img/people-1x2.jpg 900w"
+                        src="./img/people-1.jpg" 
+                        alt="менеджер1" 
+                        sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw">
                         <div class="team__container">
                             <h3 class="team__title">Игорь Демьяненко</h3>
                             <p class="team__text" lang="en">Product Designer</p>
@@ -151,7 +168,11 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./img/people-2.jpg" alt="менеджер2" width="270" height="260">
+                        <img srcset="./img/people-2.jpg 450w, 
+                        ./img/people-2x2.jpg 900w" 
+                        src="./img/people-2.jpg" 
+                        alt="менеджер2"
+                        sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw">
                         <div class="team__container">
                             <h3 class="team__title">Ольга Репина</h3>
                             <p class="team__text" lang="en">Frontend Developer</p>
@@ -174,7 +195,11 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./img/people-3.jpg" alt="менеджер3" width="270" height="260">
+                        <img srcset="./img/people-3.jpg 450w, 
+                        ./img/people-3x2.jpg 900w"
+                        src="./img/people-3.jpg" 
+                        alt="менеджер3"
+                        sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw">
                         <div class="team__container">
                             <h3 class="team__title">Николай Тарасов</h3>
                             <p class="team__text" lang="en">Marketing</p>
@@ -197,7 +222,11 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./img/people-4.jpg" alt="менеджер4" width="270" height="260">
+                        <img srcset="./img/people-4.jpg 450w, 
+                        ./img/people-4x2.jpg 900w" 
+                        src="./img/people-4.jpg" 
+                        alt="менеджер4" 
+                        sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw">
                         <div class="team__container">
                             <h3 class="team__title">Михаил Ермаков</h3>
                             <p class="team__text" lang="en">UI Designer</p>
@@ -221,9 +250,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="clients">
-        <div class="container">
+    </section>
+    <section class="clients">
+    <div class="container">
             <h2 class="clients__title title__section">Постоянные клиенты</h2>
             <ul class="clients__list list">
                 <li class="clients__item"><a href="" class="clients__link link">
@@ -251,11 +280,11 @@
                         <use href="./img/icon.svg#icon-clients-6"></use>
                     </svg></a></li>
             </ul>
-        </div>
-        </section>
-    </main>
-    <footer id="contavts" class="footer">
-    <div class="container">
+    </div>
+    </section>
+</main>
+<footer id="contavts" class="footer">
+<div class="container">
         <div class="footer-container">
         <div class="footer-list__container">
         <ul class="footer-list list">
@@ -319,8 +348,8 @@
             </div>
         </ul>
         </div>
-    </div>
-    </footer>
+</div>
+</footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
