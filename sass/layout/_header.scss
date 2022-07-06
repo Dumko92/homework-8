@@ -1,19 +1,25 @@
 
 .header {
     background-color: var(--btn-font-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ececec;
-    & .container {
+    &.container {
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
   }
   
+  .nav {
+    display: none;
+  }
   
   
   .contacts {
     margin-left: auto;
+    display: none;
+
     &__list {
       display: flex;
     }
@@ -69,20 +75,28 @@
       font-family: "Raleway";
       font-style: normal;
       font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
+      font-size: 24px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       color: var(--accent-color);
+      @include desktop {
+        font-size: 26px;
+      line-height: 1.19;
+      }
     }
     
     &__studio {
       font-family: "Raleway";
       font-style: normal;
       font-weight: 700;
-      font-size: 26px;
-      line-height: 1.19;
+      font-size: 24px;
+      line-height: 1.16;
       letter-spacing: 0.03em;
       color: var(--logo-color);
+      @include desktop {
+        font-size: 26px;
+      line-height: 1.19;
+      }
     }
   }
 
@@ -127,3 +141,73 @@
     transform: translateY(32px);
     background-color: #2196f3;
   }
+
+
+
+.menu-open-btn {
+  display: block;
+  margin-right: auto;
+}
+
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &__close-btn {
+  display: block;
+  margin-right: auto;
+
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+}
+
+
+.mob-connect {
+  &__link-mail {
+    font-weight: 500;
+font-size: 34px;
+line-height: 40px;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+&__link-tel {
+  font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.02em;
+color: #757575;
+}
+}
+
+
+.mob-soc {
+  display: flex;
+  &__link {
+    font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.02em;
+color: #2196F3;
+}
+}
+
+.count {
+  border-right:  1px solid rgba(33, 33, 33, 0.2);
+transform: rotate(90deg);
+height: 22px;
+padding-left: 10px;
+padding-right: 10px;
+}
