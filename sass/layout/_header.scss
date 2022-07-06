@@ -6,23 +6,40 @@
     border-bottom: 1px solid #ececec;
     >.container {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
+    }
+    @include tablet {
+      padding-top: 21px;
+      padding-bottom: 21px;
     }
   }
   
   .nav {
     display: none;
+    @include tablet {
+      display: block;
+    }
   }
   
   
   .contacts {
-    margin-left: auto;
-    display: none;
-
     &__list {
+      display: none;
+    
+    @include tablet {
       display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: 0;
+      @include desktop {
+        display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      }
     }
+    }
+      
     
     &__link-tel,
     &__link-mail {
@@ -42,7 +59,7 @@
     }
     
     &__item-connect {
-      margin-left: 50px;
+      margin-left: 30px;
     }
     
     &__icon {
@@ -67,10 +84,17 @@
   &__link-mail:focus {
     color: var(--accent-color);
   }
+  
   }
+    
+  
+    
+  
+    
+    
+  
   
   .logo {
-    margin-right: 93px;
     &__web {
       font-family: "Raleway";
       font-style: normal;
@@ -145,8 +169,31 @@
 
 
 .menu-open-btn  {
-  display: block;
-  margin-right: auto;
+      width: 40px;
+      height: 40px;
+      border-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      position: absolute;
+      cursor: pointer;
+      top: 5px;
+      right: 10px;
+      padding: 0;
+      outline-color: transparent;
+      transition-property: all;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      margin-right: auto;
+      fill: #212121;
+      &:hover,
+      &:focus {
+      fill: #2196f3;
+    }
+    @include tablet {
+      display: none;
+    }
 }
 
 .mob-menu-close-btn {
@@ -158,6 +205,7 @@
       justify-content: center;
       background-color: transparent;
       position: absolute;
+      cursor: pointer;
       top: 10px;
       right: 10px;
       padding: 0;
@@ -191,6 +239,13 @@
     justify-content: space-between;
     height: 100%;
     overflow-y: auto;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__list {
+    margin-top: 48px;
   }
 
   &__item:not(:last-child) {
@@ -219,7 +274,7 @@ letter-spacing: 0.02em;
 color: #757575;
 margin-bottom: 32px;
 }
-&__link-tel {
+&__item-tel {
 font-weight: 500;
 font-size: 34px;
 line-height: 1.17;
@@ -248,7 +303,10 @@ color: #2196F3;
 }
   
   
-  
+.current-mob {
+  margin-left: 26px;
+  color: #2196F3;
+}
 
 
 .count {
