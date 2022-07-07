@@ -17,9 +17,6 @@
       padding-bottom: 25px;
       }
     }
-    &-container {
-      display: flex;
-    }
   }
   
   .nav {
@@ -64,7 +61,14 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    
+    &__link-mail {
+      margin-bottom: 10px;
+      @include desktop {
+        margin-bottom: 0;
+      }
+    }
+
+
     &__item-connect {
       margin-left: 30px;
     }
