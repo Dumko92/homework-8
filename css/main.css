@@ -102,6 +102,15 @@ body {
     padding-bottom: 21px;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+.header-container {
+  display: flex;
+}
 
 .nav {
   display: none;
@@ -225,8 +234,13 @@ body {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  transform: translateY(32px);
+  transform: translateY(30px);
   background-color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .current::after {
+    transform: translateY(32px);
+  }
 }
 
 .menu-open-btn {
@@ -771,21 +785,21 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/480\ x1.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background480.jpg);
 }
 @media screen and (min-resolution: 2dppx) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/480\ x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background480x2.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/768\ x1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background768.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/768\ x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background768x2.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -796,12 +810,12 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1200\ x1.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background1200.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/1200\ x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background1200x2.jpg);
   }
 }
 .studio-content__title {

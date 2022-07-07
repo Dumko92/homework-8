@@ -14,33 +14,74 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
-            <a class="logo link" href="/"><span class="logo__web">Web</span> <span
-                    class="logo__studio">Studio</span></a>
-            <nav class="nav">
-                <ul class="nav__list list">
-                    <li class="nav__item"><a href="./index.html" class="nav__link link">Студия</a></li>
-                    <li class="nav__item"><a href="./portfolio.html" class="nav__link link current">Портфолио</a></li>
-                    <li class="nav__item"><a href="#contaсts" class="nav__link link">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="contacts">
-                <ul class="contacts__list list">
-                    <li class="contacts__item-connect"><a href="mailto:info@devstudio.com"
-                            class="contacts__link-mail link">
-                            <svg class="contacts__icon" width="16" height="12">
-                                <use href="./img/icon.svg#icon-maill"></use>
-                            </svg>info@devstudio.com</a></li>
-                    <li class="contacts__item-connect"><a href="tel:+380961111111" 
-                        class="contacts__link-tel link">
-                        <svg class="contacts__icon" width="10" height="16">
-                        <use href="./img/icon.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a></li>
-                </ul>
-            </div>
+                <div class="logo-container">
+                <a class="logo link" href="/"><span class="logo__web">Web</span> <span
+                        class="logo__studio">Studio</span></a>
+                </div>
+                <div class="nav-container">
+                <nav class="nav">
+                    <ul class="nav__list list">
+                        <li class="nav__item"><a href="./index.html" class="nav__link link ">Студия</a></li>
+                        <li class="nav__item"><a href="./portfolio.html" class="nav__link link current">Портфолио</a></li>
+                        <li class="nav__item"><a href="#contaсts" class="nav__link link">Контакты</a></li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="contacts">
+                    <ul class="contacts__list list">
+                        <li class="contacts__item-connect"><a href="mailto:info@devstudio.com"
+                                class="contacts__link-mail link">
+                                <svg class="contacts__icon" width="16" height="12">
+                                    <use href="./img/icon.svg#icon-maill"></use>
+                                </svg>info@devstudio.com</a></li>
+                        <li class="contacts__item-connect"><a href="tel:+380961111111" 
+                            class="contacts__link-tel link">
+                            <svg class="contacts__icon" width="10" height="16">
+                            <use href="./img/icon.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <button type="button" class="menu-open-btn">
+                        <svg class="menu-open-btn-icon" width="40" height="40">
+                            <use href="./img/icon.svg#icon-menu_40px"></use>
+                        </svg></button>
+                </div>
+                <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu-top">
+                        <button type="button" class="mob-menu-close-btn">
+                            <svg class="mob-menu-close-icon" width="40" height="40">
+                        <use href="./img/icon.svg#icon-close-black-18dp"></use>
+                        </svg></button>
+                    <ul class="mob-menu__list list">
+                        <li class="mob-menu__item"><a href="#studio" class="mob-menu__link link ">Студия</a></li>
+                        <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link link current-mob">Портфолио</a></li>
+                        <li class="mob-menu__item"><a href="#contaсts" class="mob-menu__link link">Контакты</a></li>
+                    </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                    <div class="mob-connect">
+                        <ul class="mob-connect__list list">
+                            <li class="mob-connect__item-call"><a href="tel:+380961111111" 
+                                class="mob-connect__item-tel link">+38 096 111 11 11</a></li>
+                            <li class="mob-connect__item-connect"><a href="mailto:info@devstudio.com"
+                                class="mob-connect__link-mail link">info@devstudio.com</a></li>
+                        </ul>
+                    </div>
+                    <ul class="mob-soc list">
+                        <li class="mob-soc__item"><a href="" class="mob-soc__link count link">Instagram</a></li>
+                        <li class="mob-soc__item"><a href="" class="mob-soc__link count link">Twitter</a></li>
+                        <li class="mob-soc__item"><a href="" class="mob-soc__link count link">Facebook</a></li>
+                        <li class="mob-soc__item"><a href="" class="mob-soc__link link">LinkedIn</a></li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
         </div>
-    </header> -->
+    </header>
 <main> 
      <section class="portfolio">
         <div class="container">
@@ -55,11 +96,26 @@
          <ul class="portfolio__content list">
              <li class="portfolio__item">
                  <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-1.jpg 450w, 
-                 ./img/img-1x2.jpg 900w" 
-                 src="./img/img-1.jpg" 
-                 alt="сайт"
-                 sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk1.jpg  1x, 
+                        /img/portdesk1x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab1.jpg  1x, 
+                        /img/porttab1x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob1.jpg  1x, 
+                        /img/portmob1x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                  <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -70,11 +126,26 @@
              </li>
              <li class="portfolio__item">
                 <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-2.jpg 450w, 
-                 ./img/img-2x2.jpg 900w"
-                 src="./img/img-2.jpg" 
-                 alt="Дизайн"
-                 sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk2.jpg  1x, 
+                        /img/portdesk2x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab2.jpg  1x, 
+                        /img/porttab2x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob2.jpg  1x, 
+                        /img/portmob2x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                 <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                     позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
@@ -86,11 +157,26 @@
              </li>
              <li class="portfolio__item">
                 <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-3.jpg 450w, 
-                 ./img/img-3x2.jpg 900w"
-                 src="./img/img-3.jpg" 
-                 alt="Приложение"
-                 sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk3.jpg  1x, 
+                        /img/portdesk3x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab3.jpg  1x, 
+                        /img/porttab3x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob3.jpg  1x, 
+                        /img/portmob3x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                  <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -101,11 +187,26 @@
              </li>
              <li class="portfolio__item">
                 <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-4.jpg 450w, 
-                 ./img/img-4x2.jpg 900w"
-                 src="./img/img-4.jpg" 
-                 alt="Маркетинг"
-                 sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk4.jpg  1x, 
+                        /img/portdesk4x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab4.jpg  1x, 
+                        /img/porttab4x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob4.jpg  1x, 
+                        /img/portmob4x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                  <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -116,7 +217,26 @@
              </li>
              <li class="portfolio__item">
                 <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-5.jpg 450w, ./img/img-5x2.jpg 900w" src="./img/img-5.jpg" alt="Приложение2" sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk5.jpg  1x, 
+                        /img/portdesk5x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab5.jpg  1x, 
+                        /img/porttab5x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob5.jpg  1x, 
+                        /img/portmob5x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                  <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                     исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -127,11 +247,26 @@
              </li>
              <li class="portfolio__item">
                 <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-6.jpg 450w, 
-                 ./img/img-6x2.jpg 900w"
-                 src="./img/img-6.jpg" 
-                 alt="Веб-сайт2"
-                 sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk6.jpg  1x, 
+                        /img/portdesk6x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab6.jpg  1x, 
+                        /img/porttab6x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob6.jpg  1x, 
+                        /img/portmob6x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                  <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -142,11 +277,26 @@
              </li>
              <li class="portfolio__item">
                 <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-7.jpg 450w, 
-                 ./img/img-7x2.jpg 900w"
-                 src="./img/img-7.jpg" 
-                 alt="Дизайн2"
-                 sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk7.jpg  1x, 
+                        /img/portdesk7x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab7.jpg  1x, 
+                        /img/porttab7x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob7.jpg  1x, 
+                        /img/portmob7x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                  <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -157,11 +307,26 @@
              </li>
              <li class="portfolio__item">
                 <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-8.jpg 450w, 
-                 ./img/img-8x2.jpg 900w" 
-                 src="./img/img-8.jpg" 
-                 alt="Маркетинг2"
-                 sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk8.jpg  1x, 
+                        /img/portdesk8x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab8.jpg  1x, 
+                        /img/porttab8x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob8.jpg  1x, 
+                        /img/portmob8x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                  <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -172,11 +337,26 @@
              </li>
              <li class="portfolio__item">
                 <div class="portfolio__top-wrap">
-                 <img srcset="./img/img-9.jpg 450w, 
-                 ./img/img-9x2.jpg 900w"
-                 src="./img/img-9.jpg" 
-                 alt="Приложение3"
-                 sizes="(min-width: 480px) 100vw, (min-width: 768px) 50vw, (min-width: 1200px) 33vw"/>
+                    <picture>
+                        <source
+                        srcset="
+                        /img/portdesk9.jpg  1x, 
+                        /img/portdesk9x2.jpg  x2" 
+                        media="(min-width: 1200px)"
+                        />
+                        <source
+                        srcset="
+                        /img/porttab9.jpg  1x, 
+                        /img/porttab9x2.jpg  x2" 
+                        media="(min-width: 768px)"
+                        />
+                        <source
+                        srcset="
+                        /img/portmob9.jpg  1x, 
+                        /img/portmob9x2.jpg  x2" 
+                        media="(min-width: 480px)"
+                        />
+                    </picture>
                  <p class="portfolio__top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                 исчерпывающие сведения о компании или частном лице.</p>
                 </div>
@@ -191,65 +371,73 @@
         </section> 
 
 </main>
-<!-- <footer id="contavts" class="footer">
+<footer id="contavts" class="footer">
     <div class="container">
-        <ul class="footer-list list">
-            <li class="footer-top-item">            
-                <a class="footer-list__logo link" href="/"><span class="footer-list__web link">Web</span> <span
-            class="footer-list__studio">Studio</span></a>
-                <address class="address">
-                <ul class="address__list list">
-                    <li class="address__content"><a href="https://goo.gl/maps/Sv4f2n2z4F3GZWwy5"
-                            class="address__link link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="address__item"><a href="mailto:info@example.com"
-                            class="address__mail link">info@example.com</a>
+            <div class="footer-container">
+            <div class="footer-list__container">
+            <ul class="footer-list list">
+                <li class="footer-list__item">          
+                    <a class="footer-list__logo link" href="/"><span class="footer-list__web link">Web</span> <span
+                class="footer-list__studio">Studio</span></a>
+                    <address class="address">
+                    <ul class="address__list list">
+                        <li class="address__content"><a href="https://goo.gl/maps/Sv4f2n2z4F3GZWwy5"
+                                class="address__link link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="address__item"><a href="mailto:info@example.com"
+                                class="address__mail link">info@example.com</a>
+                        </li>
+                        <li class="address__tel"><a href="tel:+380991111111" class="address__call link">+38 099 111 11
+                                11</a>
+                        </li> 
+                    </ul>
+                    </address>
+                </li>
+                <div class="join">
+                <li class="join__content list">
+                    <h3 class="join__title">присоединяйтесь</h3>
+                    <ul class="join__list list">
+                    <li class="join__item"><a href="" class="join__link link">
+                            <svg class="join__icon" width="20" height="20">
+                                <use href="./img/icon.svg#icon-instagram"></use></svg></a>
                     </li>
-                    <li class="address__tel"><a href="tel:+380991111111" class="address__call link">+38 099 111 11
-                            11</a>
-                    </li>
-                </ul>
-                </address>
-            </li>
-            <li class="join">
-                <h3 class="join__title">присоединяйтесь</h3>
-                <ul class="join__list list">
-                <li class="join__item"><a href="" class="join__link link">
+                    <li class="join__item"><a href="" class="join__link link">
                         <svg class="join__icon" width="20" height="20">
-                            <use href="./img/icon.svg#icon-instagram"></use></svg></a>
+                                <use href="./img/icon.svg#icon-twitter"></use></svg></a>
+                    </li>
+                    <li class="join__item"><a href="" class="join__link link">
+                        <svg class="join__icon" width="20" height="20">
+                                <use href="./img/icon.svg#icon-facebook"></use></svg></a>
+                    </li>
+                    <li class="join__item"><a href="" class="join__link link">
+                        <svg class="join__icon" width="20" height="20">
+                                <use href="./img/icon.svg#icon-linkedin"></use></svg></a>
+                    </li>
+                    </ul>
                 </li>
-                <li class="join__item"><a href="" class="join__link link">
-                    <svg class="join__icon" width="20" height="20">
-                            <use href="./img/icon.svg#icon-twitter"></use></svg></a>
-                </li>
-                <li class="join__item"><a href="" class="join__link link">
-                    <svg class="join__icon" width="20" height="20">
-                            <use href="./img/icon.svg#icon-facebook"></use></svg></a>
-                </li>
-                <li class="join__item"><a href="" class="join__link link">
-                    <svg class="join__icon" width="20" height="20">
-                            <use href="./img/icon.svg#icon-linkedin"></use></svg></a>
-                </li>
-            </li>  
-            </ul>
-            <li>
+                </div>
+                </div>
                 <div class="subscribe">
-                <div class="subscribe__container">
-                        <p class="subscribe__title">Подпишитесь на рассылку</p>
-                <form name="subscribe-form">
-                        <label for="subscribe-label"></label>
-                        <input type="email" class="subscribe__input" 
-                               name="subscribe-label" id="subscribe-label" placeholder="Email">
+                <li class="subscribe__list list">
+                    <div class="subscribe-container__input">
+                            <p class="subscribe__title">Подпишитесь на рассылку</p>
+                    <form name="subscribe-form">
+                            <label for="subscribe-label"></label>
+                            <input type="email" class="subscribe__input" 
+                                   name="subscribe-label" id="subscribe-label" placeholder="Email">
+                    </div>
+                    <div class="subscribe__button-container">
+                        <button type="submit" class="subscribe__button"
+                        >Подписаться<svg class="subscribe__icon" width="24" height="24">
+                            <use href="./img/icon.svg#icon-icon-send"></use>
+                        </svg></button>
+                    </div>
+                    </form>
+                </li>
                 </div>
-                <div class="subscribe__button-container">
-                    <button type="submit" class="subscribe__button"
-                    >Подписаться<svg class="subscribe__icon" width="24" height="24">
-                        <use href="./img/icon.svg#icon-icon-send"></use>
-                    </svg></button>
-                </div>
-                </form>
-            </li>
-        </ul>
+            </ul>
+            </div>
     </div>
-    </footer> -->
+    </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>
