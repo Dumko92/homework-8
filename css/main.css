@@ -381,7 +381,6 @@ body {
 }
 
 .current-mob {
-  margin-left: 26px;
   color: #2196F3;
 }
 
@@ -557,10 +556,12 @@ body {
 }
 .footer-list__item {
   text-align: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-list__item {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 .footer-list__logo {
@@ -647,6 +648,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .join {
+    top: 0;
     margin-right: 0;
   }
 }
@@ -655,7 +657,7 @@ body {
     text-align: left;
     display: flex;
     margin-left: 70px;
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 .join__title {
