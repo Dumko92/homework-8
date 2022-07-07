@@ -117,6 +117,11 @@ body {
     display: block;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .nav {
+    margin-right: 300px;
+  }
+}
 
 .contacts__list {
   display: none;
@@ -407,8 +412,10 @@ body {
   display: flex;
 }
 .work-list__item {
-  margin-right: var(--typical-margin);
   position: relative;
+}
+.work-list__item:not(:last-child) {
+  margin-right: 30px;
 }
 .work-list__text {
   height: 70px;
@@ -430,12 +437,18 @@ body {
 
 .title__section {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .title__section {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients {
@@ -450,7 +463,12 @@ body {
   }
 }
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+  }
 }
 .clients__list {
   margin: 0;
@@ -539,7 +557,6 @@ body {
 }
 .footer-list__item {
   text-align: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer-list__item {
@@ -790,21 +807,21 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background480.jpg);
 }
 @media screen and (min-resolution: 2dppx) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background480x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background480x2.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background768.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background768.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background768x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background768x2.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -815,12 +832,12 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background1200.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background1200.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .studio {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/background1200x2.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background1200x2.jpg);
   }
 }
 .studio-content__title {
@@ -911,12 +928,18 @@ body {
 }
 .card-list__title {
   font-weight: 700;
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .card-list__title {
+    text-align: start;
+  }
 }
 .card-list__text {
   font-weight: 400;
@@ -1208,11 +1231,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__btn-list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .portfolio__btn-list {
+    margin-bottom: 50px;
   }
 }
 .portfolio__btn {
@@ -1348,7 +1377,12 @@ body {
   }
 }
 .team__logo {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__logo {
+    margin-bottom: 50px;
+  }
 }
 .team__list {
   display: flex;

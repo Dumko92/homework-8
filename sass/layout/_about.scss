@@ -15,8 +15,11 @@
   .work-list {
     display: flex;
     &__item {
-      margin-right: var(--typical-margin);
       position: relative;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 30px;
     }
     
     &__text {
@@ -40,12 +43,16 @@
   
   .title__section {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
     margin-bottom: 50px;
+    @include desktop {
+      font-size: 36px;
+      line-height: 1.16;
+    }
   }
   
   

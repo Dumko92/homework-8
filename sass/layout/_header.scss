@@ -23,6 +23,9 @@
     display: none;
     @include tablet {
       display: block;
+      @include desktop {
+        margin-right: 300px;
+      }
     }
   }
   

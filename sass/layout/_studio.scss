@@ -12,13 +12,13 @@
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
-  ), url(/img/background480.jpg); 
+  ), url(../img/background480.jpg); 
     @media screen and (min-resolution: 2dppx) {
       & {
       background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-      ), url(/img/background480x2.jpg);
+      ), url(../img/background480x2.jpg);
       } 
     } 
     @media screen and (min-width: 768px) {
@@ -26,14 +26,14 @@
           background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
-          ), url(/img/background768.jpg);
+          ), url(../img/background768.jpg);
         } 
         @media screen and  (min-resolution: 2dppx) {
           & {
           background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
-          ), url(/img/background768x2.jpg);
+          ), url(../img/background768x2.jpg);
           } 
       }
       @include desktop {
@@ -47,14 +47,14 @@
           background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
-          ), url(/img/background1200.jpg);
+          ), url(../img/background1200.jpg);
         } 
         @media screen and (min-resolution: 2dppx) {
           & {
             background-image: linear-gradient(
               rgba(47, 48, 58, 0.4),
               rgba(47, 48, 58, 0.4)
-            ), url(/img/background1200x2.jpg);
+            ), url(../img/background1200x2.jpg);
           } 
         }
       }
